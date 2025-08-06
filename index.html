@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Generador Universal de Prompts Perfectos - Crea prompts IA optimizados para cualquier finalidad usando las mejores prácticas de prompt engineering" />
+    <meta name="keywords" content="prompt engineering, IA, ChatGPT, Claude, Gemini, generador prompts, inteligencia artificial" />
+    <meta name="author" content="Prompt Generator Universal" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Prompt Generator Universal - Crea Prompts IA Perfectos" />
+    <meta property="og:description" content="Herramienta profesional para generar prompts optimizados para cualquier IA usando templates universales y técnicas avanzadas de prompt engineering" />
+    <meta property="og:site_name" content="Prompt Generator Universal" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Prompt Generator Universal - Crea Prompts IA Perfectos" />
+    <meta name="twitter:description" content="Herramienta profesional para generar prompts optimizados para cualquier IA" />
+    
+    <title>Prompt Generator Universal - Crea Prompts IA para Cualquier Finalidad</title>
+    
+    <style>
+      /* Loading spinner styles */
+      .loading-spinner {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border: 4px solid #f3f4f6;
+        border-radius: 50%;
+        border-top-color: #3b82f6;
+        animation: spin 1s ease-in-out infinite;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      
+      .loading-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #f0f9ff 0%, #e0e7ff 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+      
+      .loading-text {
+        margin-top: 1rem;
+        color: #374151;
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Loading screen -->
+      <div class="loading-container">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Cargando Prompt Generator Universal...</div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
